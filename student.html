@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student web</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="student.css">
+    <div class="navbar">
+        <a href="student.html">Student</a>
+        <a href="tutor.html">Tutor</a>
+        <a href="tutorial.html">Tutorials</a>
+    </div>
+    <!-- create student -->
+    <div class="container"> <!-- Container for the student form -->
+        <div class="row justify-content-center">
+            <form id="addNewStudent" class="form-horizontal">
+                <fieldset>
+
+                    <legend>Create NEW Student</legend> <!-- Form title -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="title">Title</label>
+                        <select id="title" name="title" class="form-control" required>
+                            <option value="" disabled selected>Select Title</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Other">Other (Specify)</option>
+                        </select>
+                        <div id="otherSpecifyField" class="form-group" style="display: none;">
+                            <label class="col-md-5 control-label" for="otherSpecify">Specify</label>
+                            <input id="otherSpecify" name="otherSpecify" type="text" placeholder="Specify"
+                                class="form-control">
+                        </div>
+                    </div> <!-- Title select -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" placeholder="First Name" class="form-control"
+                            required>
+                    </div> <!-- First Name input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="surname">Surname</label>
+                        <input id="surname" name="surname" type="text" placeholder="Surname" class="form-control"
+                            required>
+                    </div> <!-- Surname input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone Number"
+                            class="form-control" required>
+                    </div> <!-- Phone Number input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="emailAddress">Email Address</label>
+                        <input id="emailAddress" name="emailAddress" type="text" placeholder="Email Address"
+                            class="form-control" required>
+                    </div> <!-- Email Address input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeAddressLine1">Home Address Line 1</label>
+                        <input id="homeAddressLine1" name="homeAddressLine1" type="text"
+                            placeholder="Home Address Line 1" class="form-control" required>
+                    </div> <!-- Home Address Line 1 input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeAddressLine2">Home Address Line 2</label>
+                        <input id="homeAddressLine2" name="homeAddressLine2" type="text"
+                            placeholder="Home Address Line 2" class="form-control">
+                    </div> <!-- Home Address Line 2 input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeTown">Home Town</label>
+                        <input id="homeTown" name="homeTown" type="text" placeholder="Home Town" class="form-control"
+                            required>
+                    </div> <!-- Home Town input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeCounty">Home County/City</label>
+                        <input id="homeCounty" name="homeCounty" type="text" placeholder="Home County/City"
+                            class="form-control" required>
+                    </div> <!-- Home County/City input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeEircode">Home Eircode</label>
+                        <input id="homeEircode" name="homeEircode" type="text" placeholder="Home Eircode"
+                            class="form-control">
+                    </div> <!-- Home Eircode input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="dateOfBirth">Date of Birth</label>
+                        <input id="dateOfBirth" name="dateOfBirth" type="date" class="form-control" required>
+                    </div> <!-- Date of Birth input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="parentName">Parent/Guardian Name</label>
+                        <input id="parentName" name="parentName" type="text" placeholder="Parent/Guardian Name"
+                            class="form-control">
+                    </div> <!-- Parent/Guardian Name input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="virtualAttendance">Permission to attend the tutorial
+                            virtually</label>
+                        <select id="virtualAttendance" name="virtualAttendance" class="form-control" required>
+                            <option value="" disabled selected>Select One option</option>
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                    </div> <!-- Permission to attend the tutorial virtually select -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="gender">Gender</label>
+                        <input id="gender" name="gender" type="text" placeholder="Gender" class="form-control" required>
+                    </div> <!-- Gender input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" placeholder="Subject" class="form-control">
+                    </div> <!-- Subject input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="submit"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div> <!-- Submit button -->
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- retrieve all -->
+    <div class="container">
+        <h2>Student List</h2>
+        <form id="retrieveAll">
+            <button type="submit" id="retrieveButton">Retrieve Students</button>
+        </form>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Title</th>
+                    <th>First Name</th>
+                    <th>Surname</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>Home Address</th>
+                    <th>Date of Birth</th>
+                    <th>Parent/Guardian Name</th>
+                    <th>Virtual Attendance</th>
+                    <th>Gender</th>
+                    <th>Subject</th>
+                    <th>record Creation Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- retreved data -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- get one student by id -->
+
+    <div class="container">
+        <h2>Retrieve Student by ID</h2>
+        <form id="retrieveStudentForm">
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" class="form-control"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary">Retrieve</button>
+        </form>
+        <div id="studentInfo">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>First Name</th>
+                        <th>Surname</th>
+                        <th>Phone Number</th>
+                        <th>Email Address</th>
+                        <th>Home Address</th>
+                        <th>Date of Birth</th>
+                        <th>Parent/Guardian Name</th>
+                        <th>Virtual Attendance</th>
+                        <th>Gender</th>
+                        <th>Subject</th>
+                        <th>record Creation Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- retreived data will be here-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- update student -->
+    <div class="container">
+        <h2>Update Student by ID</h2>
+        <form id="updateStudentForm">
+            <div class="form-group">
+                <label for="updateStudentId">Student ID</label>
+                <input type="text" id="updateStudentId" name="updateStudentId" placeholder="Enter Student ID"
+                    class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="title">Title</label>
+                <select id="updatetitle" name="title" class="form-control">
+                    <option value="" disabled selected>Select Title</option>
+                    <option value="Mx">Mx</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Other">Other (Specify)</option>
+                </select>
+                <div id="updateotherSpecifyField" class="form-group" style="display: none;">
+                    <label class="col-md-5 control-label" for="otherSpecify">Specify</label>
+                    <input id="updateotherSpecify" name="otherSpecify" type="text" placeholder="Specify"
+                        class="form-control">
+                </div>
+            </div> <!-- Title select -->
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="updatefirstName" name="firstName" placeholder="Enter First Name"
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="updatesurname" name="surname" placeholder="Enter Surname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="phoneNumber">Phone Number</label>
+                <input id="updatephoneNumber" name="phoneNumber" type="text" placeholder="Phone Number"
+                    class="form-control">
+            </div> <!-- Phone Number input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="emailAddress">Email Address</label>
+                <input id="updateemailAddress" name="emailAddress" type="text" placeholder="Email Address"
+                    class="form-control">
+            </div> <!-- Email Address input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeAddressLine1">Home Address Line 1</label>
+                <input id="updatehomeAddressLine1" name="homeAddressLine1" type="text" placeholder="Home Address Line 1"
+                    class="form-control">
+            </div> <!-- Home Address Line 1 input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeAddressLine2">Home Address Line 2</label>
+                <input id="updatehomeAddressLine2" name="homeAddressLine2" type="text" placeholder="Home Address Line 2"
+                    class="form-control">
+            </div> <!-- Home Address Line 2 input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeTown">Home Town</label>
+                <input id="updatehomeTown" name="homeTown" type="text" placeholder="Home Town" class="form-control">
+            </div> <!-- Home Town input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeCounty">Home County/City</label>
+                <input id="updatehomeCounty" name="homeCounty" type="text" placeholder="Home County/City"
+                    class="form-control">
+            </div> <!-- Home County/City input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeEircode">Home Eircode</label>
+                <input id="updatehomeEircode" name="homeEircode" type="text" placeholder="Home Eircode"
+                    class="form-control">
+            </div> <!-- Home Eircode input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="dateOfBirth">Date of Birth</label>
+                <input id="updatedateOfBirth" name="dateOfBirth" type="date" class="form-control">
+            </div> <!-- Date of Birth input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="parentName">Parent/Guardian Name</label>
+                <input id="updateparentName" name="parentName" type="text" placeholder="Parent/Guardian Name"
+                    class="form-control">
+            </div> <!-- Parent/Guardian Name input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="virtualAttendance">Permission to attend the tutorial
+                    virtually</label>
+                <select id="updatevirtualAttendance" name="virtualAttendance" class="form-control">
+                    <option value="" disabled selected>Select One option</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+            </div> <!-- Permission to attend the tutorial virtually -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="gender">Gender</label>
+                <input id="updategender" name="gender" type="text" placeholder="Gender" class="form-control">
+            </div> <!-- Gender input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="subject">Subject</label>
+                <input id="updatesubject" name="subject" type="text" placeholder="Subject" class="form-control">
+            </div> <!-- Subject input -->
+
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+
+    <!-- delete by id -->
+    <div class="container">
+        <h2>Delete Student by ID</h2>
+        <form id="deleteStudentForm">
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="deletestudentId" name="studentId" placeholder="Enter Student ID"
+                    class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <script src="studentAPI.js"></script>
+
+
+</body>
+
+</html>

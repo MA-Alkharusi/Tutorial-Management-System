@@ -1,0 +1,169 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1000px;
+    background-color: rgb(9, 148, 153);
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    overflow-x: auto;
+    /*horizontal scrolling */
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080808;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3 {
+    color: #030303;
+    margin-bottom: 20px;
+}
+
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4c4d4e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #929090;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+/* Table styles */
+table {
+    width: auto;
+    /* Remove the width: 100%; property */
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+thead th {
+    background-color: #5b5c5f;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* navigation bar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    border-radius: 20px;
+}
+
+/* Links inside the navigation bar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* hover navigation bar  */
+.navbar a:hover {
+    background-color: rgb(122, 119, 119);
+}

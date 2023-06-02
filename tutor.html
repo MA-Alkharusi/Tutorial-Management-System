@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor web</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="tutor.css">
+    <div class="navbar">
+        <a href="student.html">Student</a>
+        <a href="tutor.html">Tutor</a>
+        <a href="tutorial.html">Tutorials</a>
+    </div>
+    <!-- create tutor -->
+    <div class="container"> <!-- Container for the tutor form -->
+        <div class="row justify-content-center">
+            <form id="addNewTutor" class="form-horizontal">
+                <fieldset>
+
+                    <legend>Create NEW Tutor</legend> <!-- Form title -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="title">Title</label>
+                        <select id="title" name="title" class="form-control" required>
+                            <option value="" disabled selected>Select Title</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Other">Other (Specify)</option>
+                        </select>
+                        <div id="otherSpecifyField" class="form-group" style="display: none;">
+                            <label class="col-md-5 control-label" for="otherSpecify">Specify</label>
+                            <input id="otherSpecify" name="otherSpecify" type="text" placeholder="Specify"
+                                class="form-control">
+                        </div>
+                    </div> <!-- Title select -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" placeholder="First Name" class="form-control"
+                            required>
+                    </div> <!-- First Name input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="surname">Surname</label>
+                        <input id="surname" name="surname" type="text" placeholder="Surname" class="form-control"
+                            required>
+                    </div> <!-- Surname input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone Number"
+                            class="form-control" required>
+                    </div> <!-- Phone Number input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="emailAddress">Email Address</label>
+                        <input id="emailAddress" name="emailAddress" type="text" placeholder="Email Address"
+                            class="form-control" required>
+                    </div> <!-- Email Address input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeAddressLine1">Home Address Line 1</label>
+                        <input id="homeAddressLine1" name="homeAddressLine1" type="text"
+                            placeholder="Home Address Line 1" class="form-control" required>
+                    </div> <!-- Home Address Line 1 input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeAddressLine2">Home Address Line 2</label>
+                        <input id="homeAddressLine2" name="homeAddressLine2" type="text"
+                            placeholder="Home Address Line 2" class="form-control">
+                    </div> <!-- Home Address Line 2 input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeTown">Home Town</label>
+                        <input id="homeTown" name="homeTown" type="text" placeholder="Home Town" class="form-control"
+                            required>
+                    </div> <!-- Home Town input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeCounty">Home County/City</label>
+                        <input id="homeCounty" name="homeCounty" type="text" placeholder="Home County/City"
+                            class="form-control" required>
+                    </div> <!-- Home County/City input -->
+
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="homeEircode">Home Eircode</label>
+                        <input id="homeEircode" name="homeEircode" type="text" placeholder="Home Eircode"
+                            class="form-control">
+                    </div> <!-- Home Eircode input -->
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="submit"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div> <!-- Submit button -->
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- retrieve all tutors -->
+    <div class="container">
+        <h2>Tutor List</h2>
+        <form id="retrieveAll">
+            <button type="submit" id="retrieveButton">Retrieve Tutors</button>
+        </form>
+        <table id="tutorTable">
+            <thead>
+                <tr>
+                    <th>Tutor ID</th>
+                    <th>Title</th>
+                    <th>First Name</th>
+                    <th>Surname</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>Home Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- tutor data will be display here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- retrieve by id -->
+    <div class="container">
+        <h2>Retrieve Tutor by ID</h2>
+        <form id="retrieveTutorForm">
+            <div class="form-group">
+                <label for="TutorId">Tutor ID</label>
+                <input type="text" id="tutorId" name="TutorId" placeholder="Enter Tutor ID" class="form-control"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary">Retrieve</button>
+        </form>
+        <div id="tutorInfo">
+            <table id="tutorTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>First Name</th>
+                        <th>Surname</th>
+                        <th>Phone Number</th>
+                        <th>Email Address</th>
+                        <th>Home Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--tutor data will be display here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- update tutor -->
+    <div class="container">
+        <h2>Update Tutor by ID</h2>
+        <form id="updateTutorForm">
+            <div class="form-group">
+                <label for="tutorId">Tutor ID</label>
+                <input type="text" id="updatetutorId" name="tutorId" placeholder="Enter Tutor ID" class="form-control"
+                    required>
+            </div>
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="title">Title</label>
+                <select id="updatetitle" name="title" class="form-control">
+                    <option value="" disabled selected>Select Title</option>
+                    <option value="Mx">Mx</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Other">Other (Specify)</option>
+                </select>
+                <div id="updateotherSpecifyField" class="form-group" style="display: none;">
+                    <label class="col-md-5 control-label" for="otherSpecify">Specify</label>
+                    <input id="updateotherSpecify" name="otherSpecify" type="text" placeholder="Specify"
+                        class="form-control">
+                </div>
+            </div> <!-- Title select -->
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="updatefirstName" name="firstName" placeholder="Enter First Name"
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="updatesurname" name="surname" placeholder="Enter Surname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="phoneNumber">Phone Number</label>
+                <input id="updatephoneNumber" name="phoneNumber" type="text" placeholder="Phone Number"
+                    class="form-control">
+            </div> <!-- Phone Number input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="emailAddress">Email Address</label>
+                <input id="updateemailAddress" name="emailAddress" type="text" placeholder="Email Address"
+                    class="form-control">
+            </div> <!-- Email Address input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeAddressLine1">Home Address Line 1</label>
+                <input id="updatehomeAddressLine1" name="homeAddressLine1" type="text" placeholder="Home Address Line 1"
+                    class="form-control">
+            </div> <!-- Home Address Line 1 input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeAddressLine2">Home Address Line 2</label>
+                <input id="updatehomeAddressLine2" name="homeAddressLine2" type="text" placeholder="Home Address Line 2"
+                    class="form-control">
+            </div> <!-- Home Address Line 2 input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeTown">Home Town</label>
+                <input id="updatehomeTown" name="homeTown" type="text" placeholder="Home Town" class="form-control">
+            </div> <!-- Home Town input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeCounty">Home County/City</label>
+                <input id="updatehomeCounty" name="homeCounty" type="text" placeholder="Home County/City"
+                    class="form-control">
+            </div> <!-- Home County/City input -->
+
+            <div class="form-group">
+                <label class="col-md-5 control-label" for="homeEircode">Home Eircode</label>
+                <input id="updatehomeEircode" name="homeEircode" type="text" placeholder="Home Eircode"
+                    class="form-control">
+            </div> <!-- Home Eircode input -->
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+
+    <!-- delete by id -->
+    <div class="container">
+        <h2>Delete Tutor by ID</h2>
+        <form id="deleteTutorForm">
+            <div class="form-group">
+                <label for="deletetutorId">Tutor ID</label>
+                <input type="text" id="deletetutorId" name="tutorId" placeholder="Enter Tutor ID" class="form-control"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    <script src="tutorAPI.js"></script>
+
+</body>
+
+</html>

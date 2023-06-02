@@ -1,0 +1,292 @@
+[{
+  "_id": {
+    "$oid": "646ebdff87e5e7524de285a5"
+  },
+  "title": "Mr",
+  "firstName": "Liam",
+  "surname": "Murphy",
+  "phoneNumber": "0873443636",
+  "emailAddress": "Liam@gmail.com",
+  "homeAddress": {
+    "addressLine1": "24 Main Street",
+    "addressLine2": "Apartment 5",
+    "town": "Dublin",
+    "county": "Dublin",
+    "eircode": "D1MSW"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "1995-06-06T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "Y",
+    "gender": "male",
+    "subject": "math",
+    "recordCreationDate": {
+      "$date": "2023-05-25T01:46:39.709Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ebee787e5e7524de285ad"
+  },
+  "title": "Mr",
+  "firstName": "Sean",
+  "surname": "Kelly",
+  "phoneNumber": "0826325635",
+  "emailAddress": "Sean@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Abbey Road",
+    "addressLine2": "",
+    "town": "Dublin 5",
+    "county": "Dublin",
+    "eircode": "D5WS2"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "2000-08-18T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "N",
+    "gender": "male",
+    "subject": "Psychology",
+    "recordCreationDate": {
+      "$date": "2023-05-25T01:50:31.423Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ebf9b87e5e7524de285b0"
+  },
+  "title": "Ms",
+  "firstName": "Aoife",
+  "surname": "Ryan",
+  "phoneNumber": "081234653",
+  "emailAddress": "Aoife@gmail.com",
+  "homeAddress": {
+    "addressLine1": " Temple Bar",
+    "addressLine2": "Apt 24",
+    "town": "Dublin 2",
+    "county": "Dublin",
+    "eircode": ""
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "2013-07-19T00:00:00.000Z"
+    },
+    "parentGuardianName": "Byrne",
+    "virtualAttendance": "Y",
+    "gender": "Female ",
+    "subject": "History",
+    "recordCreationDate": {
+      "$date": "2023-05-25T01:53:31.271Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec0b287e5e7524de285b3"
+  },
+  "title": "Miss",
+  "firstName": "Emily",
+  "surname": "Brown",
+  "phoneNumber": "0832232354",
+  "emailAddress": "Emily@gmail.com",
+  "homeAddress": {
+    "addressLine1": "Grafton Street",
+    "addressLine2": "apartment 2",
+    "town": "DUBLIIN 2",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "1989-10-17T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "Y",
+    "gender": "Female",
+    "subject": "Nursing",
+    "recordCreationDate": {
+      "$date": "2023-05-25T01:58:10.700Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec14b87e5e7524de285b6"
+  },
+  "title": "Other",
+  "otherSpecify": "max",
+  "firstName": "Charlotte",
+  "surname": "Taylor",
+  "phoneNumber": "089399394",
+  "emailAddress": "Charlotte@google.com",
+  "homeAddress": {
+    "addressLine1": "Park Avenue",
+    "addressLine2": "Apt 21",
+    "town": "DUBLIIN 15",
+    "county": "DUBLIN",
+    "eircode": "D15WH2"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "2000-09-06T00:00:00.000Z"
+    },
+    "parentGuardianName": "mark",
+    "virtualAttendance": "N",
+    "gender": "Female",
+    "subject": "Engineering",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:00:43.938Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec1f387e5e7524de285b9"
+  },
+  "title": "Mr",
+  "firstName": "Harry",
+  "surname": "Smith",
+  "phoneNumber": "08347437847",
+  "emailAddress": "Harry@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 32",
+    "addressLine2": "Pearse Street",
+    "town": "DUBLIIN 1",
+    "county": "DUBLIN",
+    "eircode": "D1VSSD"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "1996-06-21T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "N",
+    "gender": "male",
+    "subject": "Biology",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:03:31.190Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec27a87e5e7524de285bc"
+  },
+  "title": "Mrs",
+  "firstName": "Oliver",
+  "surname": "Williams",
+  "phoneNumber": "0837448778",
+  "emailAddress": "Oliver@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Dame Street",
+    "addressLine2": "",
+    "town": "DUBLIIN",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "2003-04-17T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "Y",
+    "gender": "male",
+    "subject": "Business",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:05:46.175Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec31d87e5e7524de285bf"
+  },
+  "title": "Ms",
+  "firstName": "Amelia",
+  "surname": "Davis",
+  "phoneNumber": "0834646743",
+  "emailAddress": "Amelia@icloud.com",
+  "homeAddress": {
+    "addressLine1": "Dawson Street",
+    "addressLine2": "Apt 20",
+    "town": "DUBLIIN",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "1996-05-14T00:00:00.000Z"
+    },
+    "parentGuardianName": "Ryan",
+    "virtualAttendance": "N",
+    "gender": "Female",
+    "subject": "Science",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:08:29.511Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec39a87e5e7524de285c2"
+  },
+  "title": "Mr",
+  "firstName": "Conor",
+  "surname": "O'Connor",
+  "phoneNumber": "083764664",
+  "emailAddress": "Conor@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 21",
+    "addressLine2": "Dame Street",
+    "town": "DUBLIIN",
+    "county": "DUBLIN",
+    "eircode": "D21WS345"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "2012-07-19T00:00:00.000Z"
+    },
+    "parentGuardianName": "Byrne",
+    "virtualAttendance": "Y",
+    "gender": "male",
+    "subject": "Mathematics",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:10:34.961Z"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec42287e5e7524de285c4"
+  },
+  "title": "Mr",
+  "firstName": "Jack",
+  "surname": "Johnson",
+  "phoneNumber": "0837477343",
+  "emailAddress": "Jack@gmail.com",
+  "homeAddress": {
+    "addressLine1": "Henry Street",
+    "addressLine2": "",
+    "town": "DUBLIIN 1",
+    "county": "DUBLIN",
+    "eircode": "DE3SX1"
+  },
+  "additionalDetails": {
+    "dateOfBirth": {
+      "$date": "1996-06-04T00:00:00.000Z"
+    },
+    "parentGuardianName": "",
+    "virtualAttendance": "N",
+    "gender": "PC",
+    "subject": "Computer Science",
+    "recordCreationDate": {
+      "$date": "2023-05-25T02:12:50.066Z"
+    }
+  },
+  "__v": 0
+}]

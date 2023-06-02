@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial page</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="tutorial.css">
+    <div class="navbar">
+        <a href="student.html">Student</a>
+        <a href="tutor.html">Tutor</a>
+        <a href="tutorial.html">Tutorials</a>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutorial Form</title>
+    </head>
+
+    <body>
+        <!-- create tutorial -->
+        <div class="container">
+            <h2>Create Tutorial</h2>
+            <form id="tutorialForm">
+                <div class="form-group">
+                    <label for="tutorialDate">Tutorial Date</label>
+                    <input type="date" id="tutorialDate" name="tutorialDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tutorialTime">Tutorial Time</label>
+                    <input type="time" id="tutorialTime" name="tutorialTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="students">Students</label>
+                    <input type="text" id="students" name="students" placeholder="Enter Student ID's " required>
+                    <small>Enter student IDs separated by commas (e.g., ID1,ID2,ID3)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="tutor">Tutor</label>
+                    <input type="text" id="tutor" name="tutor" placeholder="Enter tutor ID" required>
+                    <small>Enter tutor ID</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="fee">Fee (€)</label>
+                    <input type="number" id="fee" name="fee" placeholder="Enter fees" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tutorialNumber">Tutorial Number</label>
+                    <input type="number" id="tutorialNumber" name="tutorialNumber" placeholder="Enter Tutorial Number"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tutorialAttendance">Tutorial Attendance</label>
+                    <select id="tutorialAttendance" name="tutorialAttendance" required>
+                        <option value="" disabled selected>Select Attendance statue</option>
+                        <option value="Attended">Attended</option>
+                        <option value="Cancelled">Cancelled</option>
+                        <option value="No Show">No Show</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tutorialSubject">Tutorial Subject</label>
+                    <select id="tutorialSubject" name="tutorialSubject" required>
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="English">English</option>
+                        <option value="Irish">Irish</option>
+                        <option value="Maths">Maths</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tutorialNotes">Tutorial Notes</label>
+                    <textarea id="tutorialNotes" name="tutorialNotes" rows="5" cols="40" required></textarea>
+                </div>
+
+                <button type="submit">Create Tutorial</button>
+            </form>
+        </div>
+        <!-- retreive all the tutorials -->
+        <div class="container">
+            <h2>All Tutorials</h2>
+            <form id="retrieveTutorialsForm">
+                <button type="submit">Retrieve Tutorials</button>
+            </form>
+            <table id="tutorialTable">
+                <thead>
+                    <tr>
+                        <th>Tutorial ID</th>
+                        <th>Tutorial Date</th>
+                        <th>Tutorial Time</th>
+                        <th>Students</th>
+                        <th>Tutor</th>
+                        <th>Fee (€)</th>
+                        <th>Tutorial Number</th>
+                        <th>Tutorial Attendance</th>
+                        <th>Tutorial Subject</th>
+                        <th>Tutorial Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- retreived data will be here-->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- retreive tutorial by id -->
+        <div class="container">
+            <h2>Retrieve Tutorial by ID</h2>
+            <form id="retrieveTutorialForm">
+                <div class="form-group">
+                    <label for="tutorialId">Tutorial ID:</label>
+                    <input type="text" id="tutorialId" name="tutorialId" placeholder="Enter The Tutorial ID" required>
+                </div>
+                <button type="submit">Retrieve Tutorial</button>
+            </form>
+            <table id="onetutorialTable">
+                <thead>
+                    <tr>
+                        <th>Tutorial Date</th>
+                        <th>Tutorial Time</th>
+                        <th>Students</th>
+                        <th>Tutor</th>
+                        <th>Fee (€)</th>
+                        <th>Tutorial Number</th>
+                        <th>Tutorial Attendance</th>
+                        <th>Tutorial Subject</th>
+                        <th>Tutorial Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- retreived data will be here-->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- update tutorial by id -->
+        <div class="container">
+            <h2>Update Tutorial by ID</h2>
+            <form id="updateTutorialForm">
+                <div class="form-group">
+                    <label for="tutorialId">Tutorial ID:</label>
+                    <input type="text" id="updatetutorialId" name="tutorialId" placeholder="Enter The Tutorial ID"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="tutorialDate">Tutorial Date</label>
+                    <input type="date" id="updatetutorialDate" name="tutorialDate">
+                </div>
+                <div class="form-group">
+                    <label for="tutorialTime">Tutorial Time</label>
+                    <input type="time" id="updatetutorialTime" name="tutorialTime">
+                </div>
+                <div class="form-group">
+                    <label for="students">Students</label>
+                    <input type="text" id="updatestudents" name="students" placeholder="Enter Student ID's">
+                    <small>Enter student IDs separated by commas (e.g., ID1,ID2,ID3)</small>
+                </div>
+                <div class="form-group">
+                    <label for="tutor">Tutor</label>
+                    <input type="text" id="updatetutor" name="tutor" placeholder="Enter tutor ID">
+                    <small>Enter tutor ID</small>
+                </div>
+                <div class="form-group">
+                    <label for="fee">Fee (€)</label>
+                    <input type="number" id="updatefee" name="fee" placeholder="Enter fees">
+                </div>
+                <div class="form-group">
+                    <label for="tutorialNumber">Tutorial Number</label>
+                    <input type="number" id="updatetutorialNumber" name="tutorialNumber"
+                        placeholder="Enter Tutorial Number">
+                </div>
+                <div class="form-group">
+                    <label for="tutorialAttendance">Tutorial Attendance</label>
+                    <select id="updatetutorialAttendance" name="tutorialAttendance">
+                        <option value="" disabled selected>Select Attendance statue</option>
+                        <option value="Attended">Attended</option>
+                        <option value="Cancelled">Cancelled</option>
+                        <option value="No Show">No Show</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tutorialSubject">Tutorial Subject</label>
+                    <select id="updatetutorialSubject" name="tutorialSubject">
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="English">English</option>
+                        <option value="Irish">Irish</option>
+                        <option value="Maths">Maths</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tutorialNotes">Tutorial Notes</label>
+                    <textarea id="updatetutorialNotes" name="tutorialNotes" rows="5" cols="40"></textarea>
+                </div>
+                <button type="submit">Update Tutorial</button>
+            </form>
+        </div>
+    </body>
+    <!-- Delete by id -->
+    <div class="container">
+        <h2>Delete Tutorial by ID</h2>
+        <form id="deleteTutorialForm">
+            <div class="form-group">
+                <label for="tutorialId">Tutorial ID</label>
+                <input type="text" id="deletetutorialId" name="tutorialId" placeholder="Enter Tutorial ID"
+                    class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    <script src="tutorialAPI.js"></script>
+
+    </html>
+
+</body>
+
+</html>

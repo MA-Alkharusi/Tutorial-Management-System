@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "646ec4e287e5e7524de285cb"
+  },
+  "title": "Mr",
+  "firstName": "James ",
+  "surname": "Anderson",
+  "phoneNumber": "0948747444",
+  "emailAddress": "James@UCD.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 12",
+    "addressLine2": "Merrion Square",
+    "town": "DUBLIIN ",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec55887e5e7524de285d2"
+  },
+  "title": "Miss",
+  "firstName": "Olivia",
+  "surname": "Peterson",
+  "phoneNumber": "09498874343",
+  "emailAddress": "Olivia@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 2",
+    "addressLine2": "Main Street",
+    "town": "DUBLIIN 32",
+    "county": "DUBLIN",
+    "eircode": "D32SED"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec5a187e5e7524de285d5"
+  },
+  "title": "Ms",
+  "firstName": "Ava",
+  "surname": "Turner",
+  "phoneNumber": "082736634",
+  "emailAddress": "Ava@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 30",
+    "addressLine2": "Kevin street",
+    "town": "DUBLIIN 2",
+    "county": "DUBLIN",
+    "eircode": "D2SWEX"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec5e287e5e7524de285d7"
+  },
+  "title": "Other",
+  "otherSpecify": "F1",
+  "firstName": "Henry",
+  "surname": "Wilson",
+  "phoneNumber": "086737664",
+  "emailAddress": "Henry@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 20",
+    "addressLine2": "O'Connell Street",
+    "town": "DUBLIIN ",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec63487e5e7524de285da"
+  },
+  "title": "Ms",
+  "firstName": "Sophia",
+  "surname": "Mitchell",
+  "phoneNumber": "0843874878",
+  "emailAddress": "Sophia@DCU.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 2",
+    "addressLine2": "Close Artain",
+    "town": "DUBLIIN",
+    "county": "DUBLIN",
+    "eircode": ""
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec69687e5e7524de285dd"
+  },
+  "title": "Mr",
+  "firstName": "Samuel",
+  "surname": "Foster",
+  "phoneNumber": "0864634634",
+  "emailAddress": "Samuel@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 35",
+    "addressLine2": "20 Main Street",
+    "town": "Maynooth",
+    "county": "Maynooth",
+    "eircode": "MU23SD"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646ec6f287e5e7524de285e0"
+  },
+  "title": "Mr",
+  "firstName": "Alexander",
+  "surname": "Carter",
+  "phoneNumber": "08487577",
+  "emailAddress": "Alexander@mu.ie",
+  "homeAddress": {
+    "addressLine1": "Apartment 3",
+    "addressLine2": "Maynooth university",
+    "town": "Maynooth ",
+    "county": "Kildare",
+    "eircode": "KF233"
+  },
+  "__v": 0
+}]
